@@ -1,0 +1,14 @@
+# download imagem
+    docker pull nome-da-imagem
+
+# listar imagens 
+    docker images
+
+# executar imagem
+    docker run nome-da-imagem
+
+# listar containers
+    docker ps 
+
+    # parametro para listar todos os eventos recentes
+        docker ps -a 
