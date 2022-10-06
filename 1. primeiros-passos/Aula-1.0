@@ -13,13 +13,16 @@
     # parametro para listar todos os eventos recentes
         docker ps -a  
 
-# executar container 
+# criar container 
     docker run imagem-nome
 
-    # executar container com parametros
-        docker run -parametros nome-da-imagem
+    # criar container com parametros
+        docker run -parametros imagem-nome
 
-        #parametros importantes
+    # criar container e nomear
+        docker run -parametros --name container-nome imagem-nome
+
+        # parametros importantes
             -i -> interagir
             -t -> terminal
             -d -> rodar no background e printar o id
@@ -28,8 +31,11 @@
         docker exec -it container-id comando(/bin/bash)
         exit
 
+    # copiar arquivos para dentro do container
+        docker cp arquivo-nome container-nome:/diretorio
+
     # parar execução
-        docker stop nome-da-imagem
+        docker stop container-nome
 
     # remover container
-        docker rm container-id
+        docker rm container-nome
