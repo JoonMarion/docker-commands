@@ -1,5 +1,5 @@
 # download imagem
-    docker pull imagem-nome:tag
+    docker pull imagem-nome
 
 # listar imagens 
     docker images
@@ -33,9 +33,6 @@
 
     # copiar arquivos para dentro do container
         docker cp arquivo-nome container-nome:/diretorio
-
-    # copiar arquivos de dentro do container
-        docker cp container-nome:/diretorio/arquivo-nome arquivo-copiado-nome
 
     # parar execução
         docker stop container-nome
