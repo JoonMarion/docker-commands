@@ -1,0 +1,14 @@
+# visualizar status do container (CPU, MEM, NET, DISK)
+    docker stats container-nome
+
+    # definindo limite de memoria para o container
+        docker update --memory-swap 1024M --memory 1024M container-nome
+
+    # definindo limite de CPU para o container
+        docker update --cpus 0.2 container-nome
+
+# visualizar logs do container
+    docker container logs container-nome
+
+# visualizar processos em execução no container
+    docker container top container-nome
