@@ -37,6 +37,9 @@
     # copiar arquivos de dentro do container
         docker cp container-nome:/diretorio/arquivo-nome arquivo-copiado-nome
 
+    # startar container já criado
+        docker start container-nome
+
     # parar execução
         docker stop container-nome
 
